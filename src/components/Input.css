@@ -1,0 +1,60 @@
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 0 0;
+}
+
+
+.Edit-Email {
+    width:610px;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 5px 0 0 5px;
+    border-radius: 10px;
+}
+
+.Edit-Input {
+    padding: 15px;
+    width: 610px;
+    float: left;
+    border: 1px solid black;
+    margin: 10px 0 0 5px;
+    border-radius: 10px;
+}
+
+.Edit-nasc {
+    padding: 15px;
+    width: 300px;
+    float: left;
+    border: 1px solid black;
+    margin: 10px 0 0 5px;
+    border-radius: 10px;
+}
+
+.Edit-tel {
+    padding: 15px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    flex-direction: column;
+    margin: -2.9rem 19.6rem;
+} 
+
+.editButton {
+    background-color: rgb(253, 2, 128);
+    color: #eee;
+    height: 50px;
+    border-radius: 10px;
+    width: 610px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid rgb(253, 2, 128);
+    margin: 5rem 0rem;
+}
+
+.editButton:hover {
+    background-color:rgba(0, 0, 0, 0);
+    color: rgb(253, 2, 128);
+    box-Shadow: 0 0 0 2px rgb(253, 2, 128)
+}
