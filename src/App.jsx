@@ -1,10 +1,7 @@
 import React, {useState} from 'react'
 import "./App.css"
-
 import Header from "./components/Header"
-
 import Input from "./components/Input"
-
 import Table from "./components/Table"
 
 const App = () => {
@@ -15,12 +12,8 @@ const App = () => {
   }
   
   const [userList, setUserList] = useState([]) 
-
   const [currentUser, setCurrentUser] = useState(initialFormState) 
-
   const [editing, setEditing] = useState(false)
-
- 
 
   const handleSubmit = newUser => {
     setUserList(userList => [...userList, newUser]);
@@ -38,7 +31,7 @@ const App = () => {
     setCurrentUser({
       id: null,
       email: '',
-      firstName: ''
+      firstName: '',
     })
   }
   
@@ -55,7 +48,7 @@ const App = () => {
          setCurrentUser({
            id:null,
            email: '',
-           firstName: ''
+           firstName: '',
          });
        }
 

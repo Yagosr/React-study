@@ -25,14 +25,21 @@
 .styleBody {
    display: flex;
    flex-direction: column;
-
 }
 
 .rowTable {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem ;
+    justify-content: center;
+    font-size:10px
+}
+.content {
+    gap:1rem;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .styleEdit {

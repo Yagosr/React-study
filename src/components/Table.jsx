@@ -19,6 +19,7 @@ const Table = ({userList, handleEdit, handleRemove}) => {
             {
                     userList.map((user) => (
                         <tr className="rowTable" key={user.id}> 
+                        <div className="content">
                             <td>
                                  {user.firstName}
                             </td>
@@ -26,12 +27,20 @@ const Table = ({userList, handleEdit, handleRemove}) => {
                             <td className="styleTableEmail">
                                  {user.email}
                             </td>
-                            
-                            <td>
-                                <button className="styleEdit" type="button" onClick={() => handleEdit(user)}>Editar</button>
-
-                                <button className="styleRemove" type="button" onClick={() => handleRemove(user.id)}>Remover</button>
+                            <td className="styleTableAge">
+                                 {user.age}
                             </td>
+                            <td className="styleTablePhone">
+                                 {user.phone}
+                            </td>
+                        </div>
+                            <div className="buttons">
+                                <td>
+                                    <button className="styleEdit" type="button" onClick={() => handleEdit(user)}>Editar</button>
+
+                                    <button className="styleRemove" type="button" onClick={() => handleRemove(user.id)}>Remover</button>
+                                </td>
+                            </div>
 
                             
                         </tr>
